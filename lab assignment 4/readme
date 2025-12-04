@@ -1,0 +1,139 @@
+Weather Data Visualizer
+Data Analysis & Visualization Project
+
+This project focuses on working with real-world weather datasets using Pandas, NumPy, and Matplotlib.
+You will clean data, compute statistics, visualize trends, and generate meaningful insights.
+
+📘 Project Overview
+
+The goals of this project are to:
+
+Load and inspect real weather datasets
+
+Clean missing or inconsistent data
+
+Process date/time columns
+
+Compute statistical summaries using NumPy
+
+Create multiple weather-related visualizations
+
+Group and aggregate data for deeper insights
+
+Export results and tell a data-driven story
+
+This project demonstrates practical skills useful in data analysis, data science, and Python visualization.
+
+🗂️ Assignment Tasks
+Task 1: Data Acquisition and Loading
+
+Download a real CSV file of local or open-source weather data
+Examples: Kaggle datasets, IMD, NOAA, WeatherAPI logs.
+
+Load the dataset into a Pandas DataFrame
+
+Inspect its structure using:
+
+df.head()
+
+df.info()
+
+df.describe()
+
+Deliverable:
+✔ Loaded DataFrame + inspection results
+
+Task 2: Data Cleaning and Processing
+
+Handle missing values (drop or fill with mean/median/forward-fill)
+
+Convert date columns to proper datetime format
+
+Filter relevant columns (e.g., temperature, rainfall, humidity)
+
+Remove duplicates if any
+
+Deliverable:
+✔ Cleaned DataFrame ready for analysis
+
+Task 3: Statistical Analysis with NumPy
+
+Compute statistics:
+
+Daily, monthly, yearly analysis
+
+Mean, min, max, standard deviation
+
+Use NumPy functions like:
+
+np.mean()
+
+np.std()
+
+np.min()
+
+np.max()
+
+Deliverable:
+✔ Summary of computed statistics
+
+Task 4: Visualization with Matplotlib
+
+Create the following plots:
+
+📈 1. Line Chart
+
+Daily temperature trends
+
+📊 2. Bar Chart
+
+Monthly rainfall totals
+
+🔵 3. Scatter Plot
+
+Humidity vs. temperature
+
+➕ 4. Combined Figure
+
+At least two plots in one figure
+
+Deliverable:
+✔ 4 visualizations using Matplotlib
+✔ Clear titles, labels, grids, legends
+
+Task 5: Grouping and Aggregation
+
+Use Pandas .groupby() to:
+
+Group data by month, season, or year
+
+Calculate aggregated statistics:
+
+Avg temperature per month
+
+Total rainfall per season
+
+Avg humidity per year
+
+Also use .resample() for time-series aggregation (optional)
+
+Deliverable:
+✔ Grouped results + aggregated tables
+
+Task 6: Export and Storytelling
+
+Export cleaned dataset to a new CSV
+
+Save all plots as PNG files
+
+Write a Markdown or text report summarizing:
+
+Insights
+
+Observed trends
+
+Seasonal behavior
+
+Comparisons
+
+Deliverables:
