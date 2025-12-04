@@ -1,1 +1,193 @@
+Campus Energy-Use Dashboard
+Capstone Project – Programming for Problem Solving using Python
+📘 Project Overview
+This project focuses on analyzing and visualizing campus electricity consumption using Python. You will build an end-to-end pipeline—from reading raw meter data to generating insights and visual dashboards that help the facilities team make better decisions about energy usage.
+🎯 Objectives
+By completing this project, you will learn to:
 
+
+Read, validate, and combine multiple datasets using Pandas
+
+
+Implement Object-Oriented Programming (OOP) to model real-world entities
+
+
+Perform time-series and categorical aggregations
+
+
+Create multi-chart visualizations using Matplotlib
+
+
+Export processed datasets and generate an executive summary report
+
+
+
+📂 Project Structure
+campus-energy-dashboard-<yourname>/
+│
+├── data/                         # Raw CSV files (one per building)
+├── scripts/                      # Python scripts or notebooks
+│   ├── ingest.py                 # Data ingestion & validation
+│   ├── aggregate.py              # Core calculations & logic
+│   ├── models.py                 # OOP classes (Building, MeterReading, Manager)
+│   ├── visualize.py              # Matplotlib dashboard creation
+│   ├── summary.py                # Summary report generator
+│
+├── output/
+│   ├── cleaned_energy_data.csv   # Final merged dataset
+│   ├── building_summary.csv      # Aggregated stats
+│   ├── summary.txt               # Executive summary
+│   └── dashboard.png             # Multi-plot visualization
+│
+└── README.md                     # Project documentation
+
+
+✔️ Task Breakdown
+🧩 Task 1 – Data Ingestion & Validation
+
+
+Read multiple .csv files from /data/
+
+
+Merge into one DataFrame
+
+
+Add building metadata if missing
+
+
+Handle:
+
+
+Missing files
+
+
+Corrupt rows
+
+
+
+
+Output: df_combined
+
+
+
+📈 Task 2 – Core Aggregation Logic
+Functions to implement:
+calculate_daily_totals(df)
+calculate_weekly_aggregates(df)
+building_wise_summary(df)
+
+You will compute:
+
+
+Daily totals
+
+
+Weekly totals
+
+
+Per-building mean, min, max, total consumption
+
+
+
+🏛️ Task 3 – Object-Oriented Modeling
+Create:
+class Building
+
+
+name
+
+
+list of meter readings
+
+
+methods: add_reading(), calculate_total_consumption(), generate_report()
+
+
+class MeterReading
+
+
+timestamp
+
+
+kWh value
+
+
+class BuildingManager
+
+
+manages all buildings
+
+
+produces combined reports
+
+
+
+📊 Task 4 – Visualization (Matplotlib Dashboard)
+Create a single PNG (dashboard.png) containing:
+
+
+Line chart – daily consumption (all buildings)
+
+
+Bar chart – weekly averages per building
+
+
+Scatter plot – peak-hour usage
+
+
+Use:
+plt.subplots()
+
+Include titles, legends, axes labels.
+
+📁 Task 5 – Data Export & Summary
+Export:
+
+
+cleaned_energy_data.csv
+
+
+building_summary.csv
+
+
+Generate a summary.txt containing:
+
+
+Total campus electricity usage
+
+
+Highest-consuming building
+
+
+Peak load time
+
+
+Daily/weekly patterns
+
+
+
+📝 Deliverables Checklist
+✔ Python scripts/notebooks
+✔ Sample CSV dataset
+✔ Dashboard image dashboard.png
+✔ Cleaned dataset & summary CSV
+✔ Summary report .txt
+✔ README.md (this file)
+
+🧪 Evaluation Criteria
+CriterionWeightData Ingestion & Cleaning20%Aggregation Logic20%OOP Design20%Visualization Quality20%Persistence & Summary10%Code Quality & GitHub10%
+
+🛡 Academic Integrity
+This is an individual assignment.
+All code must be your own.
+Plagiarism may lead to penalties.
+
+📬 Contact
+For queries, reach out to:
+sameer.farooq@krmangalam.edu.in
+
+If you want, I can also:
+✅ Create the GitHub repository structure
+✅ Generate Python code for each task
+✅ Create the visualization code
+Just tell me!
